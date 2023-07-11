@@ -1,3 +1,4 @@
+/*____________________________REGEX__________________________________________*/
 function validateForm(event) {
     event.preventDefault(); // Empêche le rechargement de la page lors de la soumission du formulaire
 
@@ -22,4 +23,18 @@ function validateForm(event) {
         // Réinitialisation du formulaire
         document.getElementById("contactForm").reset();
     }
+}
+
+/*____________________________LOADING__________________________________________*/
+//declaration de la variable
+var load;
+//temps qui s'écoule de  la page 
+function loader() {
+    load = setTimeout(showPage, 3000);
+}
+//affiche le contenu de la page 
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+    document.getElementsByClassName("footer").style.display = "block";
 }

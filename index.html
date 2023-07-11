@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="src/img/logo_gamestore.png" type="image/x-icon">
     <title>Gamestore</title>
 </head>
 
 <body>
+    <!-- header : navbar + audio -->
     <header>
+
         <div class="navbar">
             <div class="logo">Gamestore</div>
 
@@ -20,37 +23,38 @@
                 <a href="#contact">Contact</a>
             </div>
         </div>
-
         <div class="audio-container">
             <audio id="audioPlay" controls autoplay loop>
             <source src="src/son/son_game2.mp3" type="audio/mp3">
-           
-            Votre navigateur prend pas en compte l'element audio
+       
         </audio>
         </div>
-        </div>
     </header>
+    <!---->
 
-
-
-
-
+    <!--main : 4 section -->
     <main>
+        <!--section 1 :bienvenue -->
         <section id="bienvenue">
+
             <video id="background-video" autoplay loop muted>
-                        <source src="src/video/fd_gamerstore.mp4" type="video/mp4">
-                    </video>
+             <source src="src/video/fd_gamerstore.mp4" type="video/mp4">
+        </video>
 
             <div class="content">
                 <h1>Gamestore</h1>
-                <h2>Explorez votre destination ultime !</h2>
-
+                <h2>Découvrez l'univers infini des jeux sur Gamestore!</h2>
             </div>
+
         </section>
+        <!---->
+        <!--section 2 : actualite -->
         <section id="actualite">
+
             <div class="gauche">
                 <img src="src/img/fd-actualite.png" alt="" srcset="" />
             </div>
+
             <div class="droite_actualite">
                 <h2>Actualités</h2>
                 <p>Découvrez notre site web, optimisé pour une expérience fluide et harmonieuse, que vous soyez sur votre ordinateur ou sur votre téléphone portable.
@@ -59,30 +63,40 @@
             </div>
 
         </section>
+        <!---->
+
+        <!--section 3: jeux -->
         <section id="jeux">
             <div class="gauche_jeux">
                 <h2>Nos jeux </h2>
-                <p>Cliquer sur l'un des jeux </p>
-                <div class="galerie">
-                    <a href="../de/index.html"><img src="src/img/logo_dice.png" alt="" srcset=""></a>
-                    <a href="../chifoumi/index.html"><img src="src/img/logo_chifoumi.png" alt="" srcset=""></a>
+                <p> Que vous préfériez lancer les dés dans un jeu de dés passionnant ou affronter l'ordinateur dans une partie de chifoumi, cliquez sur l'un des jeux et plongez dans l'action ! </p>
 
+                <div class="galerie">
+                    <a href="jeux/de/index.html">
+                        <img src="src/img/logo_dice.png" alt="" srcset="">
+                    </a>
+
+                    <a href="jeux/chifoumi/index.html">
+                        <img src="src/img/logo_chifoumi.png" alt="" srcset="">
+                    </a>
                 </div>
             </div>
+
             <div class="droite_jeux">
                 <video id="video_jeu" autoplay loop muted>
-                    <source src="src/video/fd_loading.mp4" type="video/mp4">
+                    <source src="src/video/fd_jeux.mp4" type="video/mp4">
                 </video>
             </div>
-            </di>
+
 
         </section>
-
+        <!---->
+        <!--section contact -->
         <section id="contact">
             <div class="gauche_contact">
                 <img src="src/img/fd_gamestore.jpg" alt="" srcset="" />
-
             </div>
+
             <div class="droite_contact">
                 <h2>Nous Contacter</h2>
                 <form id="contactForm" onsubmit=" return validateForm(event)">
@@ -116,20 +130,26 @@
                     <button type="submit">Envoyer</button>
 
                 </form>
-
                 <br>
+            </div>
 
-            </div>
-            </div>
         </section>
-
+        <!---->
     </main>
-    <footer>
+    <!---->
+    <!--footer-->
+    <footer class="footer">
         <!-- Pied de page -->
         <p>© 2023 Stella. Tous droits réservés.</p>
     </footer>
-    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <!---->
+    <!--script-->
+    <div class="script">
+        <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </div>
+    <!---->
+
 </body>
 
 </html>
