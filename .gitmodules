@@ -1,0 +1,7 @@
+[submodule "jeux/chifoumi"]
+    path = jeux/chifoumi
+    url = https://github.com/stellaric/chifoumi.git
+
+[submodule "jeux/de"]
+    path = jeux/de
+    url = https://github.com/stellaric/de.git
