@@ -24,17 +24,3 @@ function validateForm(event) {
         document.getElementById("contactForm").reset();
     }
 }
-
-/*____________________________LOADING__________________________________________*/
-//declaration de la variable
-var load;
-//temps qui s'écoule de  la page 
-function loader() {
-    load = setTimeout(showPage, 3000);
-}
-//affiche le contenu de la page 
-function showPage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
-    document.getElementsByClassName("footer").style.display = "block";
-}

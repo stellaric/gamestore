@@ -398,17 +398,16 @@ label {
     /*main*/
     /*s1 : bienvenue*/
     #bienvenue {
-        height: auto;
+        height: 520px;
         padding: 50px;
-    }
-    .content {
-        display: none;
     }
     .content h1 {
         visibility: hidden;
     }
     .content h2 {
-        visibility: hidden;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        text-shadow: 0 0 11px #fffbfb;
     }
     .gauche {
         display: none;
@@ -449,7 +448,7 @@ label {
         font-size: medium;
     }
     .container_contact {
-        width: min-content;
+        width: 300px;
     }
     .name_card {
         flex-direction: column;
